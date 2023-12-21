@@ -6,9 +6,9 @@ Note : Cette épreuve avait été proposée lors de la finale du FCSC 2019.
 
 Cette épreuve a été découpée en trois parties :
 
-**StegCryptoDIY - PNG**
-[StegCryptoDIY - RNG](README_2_3.md)
-[StegCryptoDIY - Final Boss](README_3_3.md)
+- **StegCryptoDIY - PNG**
+- [StegCryptoDIY - RNG](README_2_3.md)
+- [StegCryptoDIY - Final Boss](README_3_3.md)
 
 
 ## Images du challenge

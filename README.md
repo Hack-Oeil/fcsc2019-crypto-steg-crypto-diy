@@ -2,9 +2,9 @@
 
 Cette épreuve a été découpée en trois parties :
 
-[StegCryptoDIY - PNG](README_1_3.md)
-[StegCryptoDIY - RNG](README_2_3.md)
-[StegCryptoDIY - Final Boss](README_3_3.md)
+- [StegCryptoDIY - PNG](README_1_3.md)
+- [StegCryptoDIY - RNG](README_2_3.md)
+- [StegCryptoDIY - Final Boss](README_3_3.md)
 
 
 Auteur : Guena
