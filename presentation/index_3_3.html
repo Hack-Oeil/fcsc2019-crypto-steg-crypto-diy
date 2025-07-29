@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="UTF-8">
+    <!--Page Title-->
+    <title>Hack-Oeil - Les CTFs de Cyrhades</title>
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" title="Favicon"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Vérifie si la fenêtre est dans une iframe
+    if (window.self !== window.top) {
+        document.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', (event) => {
+            const a = event.target.closest('a[href^="http"]');
+            if (a) {
+            event.preventDefault();
+            window.parent.postMessage({
+                type: "open-external",
+                url: a.href
+            }, "*");
+            }
+        });
+        });
+    }
+    });
+    </script>
+</head>
+<body>
+
+<div id="wrapper">
+    <!--Main Content Area-->
+    <main id="content">
+        <!--Ctf-->
+        <section class="ctf scrollto">
+            <article class="row clearfix">        
+                <div class="col-1">  
+                    <div class="section-heading">
+                        <h3>Challenge #94</h3>
+                        <h2 class="section-title">StegCryptoDIY - Final Boss</h2>
+                        <div class="">
+                            <p>Comme tout le monde s’en rappelle, Dumb et Dumby ont échangé, il y a quelques semaines, en utilisant un nouveau cryptosystème basé sur les problèmes FACT et DLP : <code>CryptoDIY</code>.</p>
+                            <p>Pour rappel, les paramètres <code>g_1</code> et <code>g_2</code> sont définis par :</p>
+                            <ul>
+                            <li><code>N = p . q</code></li>
+                            <li><code>g_1 = g^(s_1 . (p - 1)) (mod N)</code></li>
+                            <li><code>g_2 = g^(s_2 . (q - 1)) (mod N)</code>
+                            où <code>g</code> est un générateur inconnu, <code>s_1</code> et <code>s_2</code> sont deux nonces, et <code>p</code> et <code>q</code> sont inconnus.</li>
+                            </ul>
+                            <p>Ils pensent avoir une version durcie, montrez leur le contraire en retrouvant leur clé partagée à partir des informations issues des deux challenges précédents <code>StegCrypto DIY - PNG</code> et <code>StegCrypto DIY - RNG</code> !</p>
+                        </div>
+                        <p>                          
+                            Note : Cette épreuve avait été proposée lors de la finale du FCSC 2019.
+                            <br /><br />
+                            Cette épreuve a été découpée en trois parties :
+                            <ul>
+                                <li>StegCryptoDIY - PNG</li>
+                                <li>StegCryptoDIY - RNG</li>
+                                <li>StegCryptoDIY - Final Boss</li>
+                            </ul>
+                        </p>
+                        <h4>Fichiers à étudier:</h4>
+                        <p>
+                            <ul>
+                                <li>leHACK19_chall.png</li>
+                                <li>leHACK19_ref.png</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div> 
+            </article>
+            
+            <article class="row clearfix">        
+                <div class="col-1">  
+                    <div class="section-heading">
+                        <h3>FCSC 2019</h3>
+                        <h2 class="section-title">Hackropole</h2>
+                        <p class="section-subtitle">
+                            Lien officiel :
+                            <a target="_blank" href="https://hackropole.fr/fr/challenges/forensics/fcsc2019-crypto-steg-crypto-diy-1/">FCSC 2019 - StegCryptoDIY - RNG</a>
+                            <br />
+                            Auteur: Guena
+                        </p>
+                    </div>
+                </div> 
+            </article>
+
+            <article class="row clearfix">        
+                <div class="col-1">  
+                    <div class="section-heading">
+                        <h3>Apprentissage</h3>
+                        <h2 class="section-title">Documentations et Vidéos</h2>
+                        <p class="section-subtitle">                           
+                            Aucune documentation pour le moment
+                        </p>
+                    </div>
+                </div> 
+            </article>
+
+            <article class="row clearfix">        
+                <div class="col-1">  
+                    <div class="section-heading">
+                        <h3>Aide</h3>
+                        <h2 class="section-title">Conseils et indices</h2>
+                        <p class="section-subtitle">
+                            <a target="_blank" href="https://discord.com/channels/1175764392307077120/1176173464411979806">Fil sur le Discord</a>
+                        </p>
+                    </div>
+                </div> 
+            </article>
+        </section>
+        <!--End of Ctf-->
+    </main>
+    <!--End Main Content Area-->
+
+    <a id="scrollUp" href="#wrapper" style="position: fixed; z-index: 1000;" aria-label="Remonter en haut de la page" title="Remonter en tête de site"></a>
+</div>
+</body>
+</html>

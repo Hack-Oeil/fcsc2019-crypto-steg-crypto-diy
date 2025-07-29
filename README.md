@@ -1,7 +1,7 @@
 # FCSC 2019 StegCryptoDIY
 
 Cette épreuve a été découpée en trois parties :
-
+ 
 - [StegCryptoDIY - PNG](README_1_3.md)
 - [StegCryptoDIY - RNG](README_2_3.md)
 - [StegCryptoDIY - Final Boss](README_3_3.md)
@@ -26,4 +26,4 @@ Mais voici comment installer ce CTF manuellement :
 -----------
 
 ## Sur le site officiel hackropole.fr
-> https://hackropole.fr/fr/challenges/crypto/fcsc2019-crypto-steg-crypto-diy-1/
+> https://hackropole.fr/fr/challenges/forensics/fcsc2019-crypto-steg-crypto-diy-1/
